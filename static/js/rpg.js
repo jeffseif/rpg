@@ -1,22 +1,19 @@
-var CONVERTER = new showdown.Converter();
-var MARKDOWNS = [
-    'title',
-    'statistics',
-    'characteristics',
-    'skills',
-    'equipment',
-];
+var CONVERTER = new showdown.Converter({tables: true});
 
-function markdownToHTML(id) {
-    var markdown = document.getElementById(id).innerHTML;
-    return CONVERTER.makeHtml(markdown);
+function markdownToHTML(markdown) {
+    return (
+            '<div class="html">'
+        +   CONVERTER.makeHtml(markdown.innerHTML)
+        +   '</div>'
+    );
 }
 
 function insertHTML() {
     var display = document.getElementById('display');
 
     var html = '';
-    for (let markdown of MARKDOWNS) {
+    var markdowns = document.getElementsByClassName('markdown');
+    for (let markdown of markdowns) {
         html += markdownToHTML(markdown);
     }
 

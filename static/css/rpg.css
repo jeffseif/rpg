@@ -11,3 +11,19 @@ div {
 div.markdown {
   display: none;
 }
+
+div.html {
+  width: calc(50% - 1em);
+}
+
+table {
+  border: 1px solid gray;
+}
+
+th {
+  padding-bottom: 1em;
+}
+
+td {
+  border-bottom: 1px solid lightgray;
+}

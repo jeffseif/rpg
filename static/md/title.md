@@ -1,4 +1,1 @@
-# Character sheet
-Name: Arkhan
-Species: Bothan
-Career: Commander
+# **Arkhan** (*Bothan*) Commander
