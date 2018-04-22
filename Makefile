@@ -40,10 +40,11 @@ $(SHOWDOWN_TARBALL):
 .PHONY: host
 host: $(VENV) $(HOST)
 	@echo "Hosted @ http://$(shell hostname -I | xargs):$(PORT)/"
-	@FLASK_APP=$(HOST) FLASK_DEBUG=1 $</bin/flask \
+	@FLASK_APP=$(HOST) $</bin/flask \
 		run \
 			--host '0.0.0.0' \
-			--port $(PORT)
+			--port $(PORT) \
+			--reload
 
 $(VENV): requirements.txt
 	@virtualenv \
