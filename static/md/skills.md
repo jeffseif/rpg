@@ -25,8 +25,6 @@
 | Survival (Cun)    |        |      | ◇◇◇
 | Vigilance (Will)  |   ✅   |  1   | ⬡◇◇
 
-<hr>
-
 |    Combat Skills    | Career | Rank | Dice |
 |:------------------- |:------:|:----:|:----:|
 | Brawl (Br)          |   ✅   |      | ◇

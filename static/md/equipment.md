@@ -4,8 +4,6 @@
 |:-------:|
 |   175   |
 
-<hr>
-
 |         Weapon         |     Skill      |  Range  |    Damage     | Dice |
 |:---------------------- |:--------------:|:-------:|:-------------:|:----:|
 | Heavy Blaster Pistol   | Ranged (Light) | Medium  | 7 + 1 × ✮     | ⬡◇◇
@@ -18,8 +16,6 @@
 | Armor Piercing Grenade | Ranged (Light) | Short   | 16 + 1 × ✮    | ⬡◇◇
 |                        |                |         | pierce 3
 |                        |                |         | crit @ 🦇🦇🦇
-
-<hr>
 
 | Count |        Equipment       | Description |
 | -----:|:---------------------- |:----------- |

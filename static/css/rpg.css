@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: monospace;
   padding: 0 0.5em;
@@ -6,6 +10,13 @@ body {
 div {
   border-radius: 5px;
   margin: 1em 0;
+  text-align: center;
+}
+
+div#header, div#footer {
+  background-color: lightslategray;
+  font-size: 200%;
+  margin: 0;
 }
 
 div.markdown {
@@ -13,17 +24,29 @@ div.markdown {
 }
 
 div.html {
+  border: 1px solid gray;
+  background-color: lightgray;
+  float: left;
+  margin: 0.5em;
   width: calc(50% - 1em);
 }
 
-table {
-  border: 1px solid gray;
+div#display::after {
+  content: '';
+  clear: both;
+  display: table;
 }
 
-th {
-  padding-bottom: 1em;
+div.html h2 {
+  margin: 1em;
 }
 
-td {
-  border-bottom: 1px solid lightgray;
+div.html table {
+  border: 1px solid silver;
+  margin: 1em;
+  width: calc(100% - 2em);
+}
+
+div.html th, div.html td {
+  padding: 0.5em;
 }
