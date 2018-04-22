@@ -16,7 +16,7 @@
 | Mechanics (Int)   |        |      | ◆◆
 | Medicine (Int)    |        |      | ◆◆
 | Negotiation (Pr)  |        |  1   | ⬢◆◆
-| Perception (Cun)  |   ✅   |  1   | ⬢◆◆
+| Perception (Cun)  |   ✅   |  2   | ⬢⬢◆
 | Piloting (Ag)     |        |      | ◆◆◆
 | Resilience (Br)   |        |      | ◆
 | Skulduggery (Cun) |        |      | ◆◆◆↑

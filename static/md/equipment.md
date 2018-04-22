@@ -20,6 +20,6 @@
 |   1   | Heavy Blaster Pistol
 |   1   | Combat Knife
 |   3   | Frag Grenade
-|   2   | Armor Piercing Grenade
+|   1   | Armor Piercing Grenade
 |   5   | Stimpack               | Use as a maneuver to heal 4 wounds on a living creature. Consumed on use.
 |   2   | Glowrods               | Bright lights for signaling or illumination.
