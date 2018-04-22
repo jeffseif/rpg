@@ -15,7 +15,7 @@
 | Leadership (Pr)   |   ✅   |  2   | ⬢⬢◆
 | Mechanics (Int)   |        |      | ◆◆
 | Medicine (Int)    |        |      | ◆◆
-| Negotiation (Pr)  |        |      | ◆◆◆
+| Negotiation (Pr)  |        |  1   | ⬢◆◆
 | Perception (Cun)  |   ✅   |  1   | ⬢◆◆
 | Piloting (Ag)     |        |      | ◆◆◆
 | Resilience (Br)   |        |      | ◆
