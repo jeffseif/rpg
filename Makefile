@@ -1,9 +1,10 @@
 PYTHON = $(shell which python3)
 VENV = venv/
 
-mkdir = mkdir -p $(dir $@)
+mkdir = mkdir -p $(dir $@/)
 
 HOST = host.py
+HTML = index.html
 PORT = 5000
 SHOWDOWN = showdown
 SHOWDOWN_VERSION = 1.8.6
@@ -38,13 +39,16 @@ $(SHOWDOWN_TARBALL):
 		https://github.com/showdownjs/showdown/archive/$(SHOWDOWN_VERSION).tar.gz
 
 .PHONY: host
-host: $(VENV) $(HOST)
+host: $(VENV) $(HOST) $(HTML)
 	@echo "Hosted @ http://$(shell hostname -I | xargs):$(PORT)/"
 	@FLASK_APP=$(HOST) $</bin/flask \
 		run \
 			--host '0.0.0.0' \
 			--port $(PORT) \
 			--reload
+
+$(HTML): $(VENV) $(shell find static/md/ -type f)
+	@$<bin/python build.py > $@
 
 $(VENV): requirements.txt
 	@virtualenv \

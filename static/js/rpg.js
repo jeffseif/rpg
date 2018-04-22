@@ -9,10 +9,9 @@ function markdownToHTML(markdown) {
 }
 
 function colorTheDice(html) {
-    html = html.replace(/⬢/g, '<span class="yellow">⬢</span>');
-    html = html.replace(/◆/g, '<span class="green">◆</span>');
-
     return html
+        .replace(/⬢/g, '<span class="yellow">⬢</span>')
+        .replace(/◆/g, '<span class="green">◆</span>');
 }
 
 function insertHTML() {
