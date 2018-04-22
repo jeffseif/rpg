@@ -63,7 +63,6 @@ $(VENV): requirements.txt
 
 .PHONY: clean
 clean:
-	@rm -rf $(SHOWDOWN_JS)
 	@rm -rf $(VENV)
 	@find . -name '*.pyc' -delete
 	@find . -name '__pycache__' -type d -delete
