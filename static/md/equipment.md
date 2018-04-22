@@ -4,18 +4,12 @@
 |:-------:|
 |   175   |
 
-|         Weapon         |     Skill      |  Range  |    Damage     | Dice |
-|:---------------------- |:--------------:|:-------:|:-------------:|:----:|
-| Heavy Blaster Pistol   | Ranged (Light) | Medium  | 7 + 1 × ✮     | ⬡◇◇
-|                        |                |         | crit @ 🦇🦇🦇
-| Combat Knife           | Melee          | Engaged | 2 + 1 × ✮     | ◇
-|                        |                |         | crit @ 🦇🦇🦇
-| Frag Grenade           | Ranged (Light) | Short   | 8 + 1 × ✮     | ⬡◇◇
-|                        |                |         | blast 6 @ 🦇🦇
-|                        |                |         | crit @ 🦇🦇🦇🦇
-| Armor Piercing Grenade | Ranged (Light) | Short   | 16 + 1 × ✮    | ⬡◇◇
-|                        |                |         | pierce 3
-|                        |                |         | crit @ 🦇🦇🦇
+|         Weapon         |     Skill      |  Range  |                     Damage                      | Dice |
+|:---------------------- |:--------------:|:-------:|:-----------------------------------------------:|:----:|
+| Heavy Blaster Pistol   | Ranged (Light) | Medium  | 7 + ✮  <br> crit @ 🦇🦇🦇                       | ⬡◇◇
+| Combat Knife           | Melee          | Engaged | 2 + ✮  <br> crit @ 🦇🦇🦇                       | ◇
+| Frag Grenade           | Ranged (Light) | Short   | 8 + ✮  <br> crit @ 🦇🦇🦇🦇 <br> blast 6 @ 🦇🦇 | ⬡◇◇
+| Armor Piercing Grenade | Ranged (Light) | Short   | 16 + ✮ <br> crit @ 🦇🦇🦇   <br> pierce 3       | ⬡◇◇
 
 | Count |        Equipment       | Description |
 | -----:|:---------------------- |:----------- |
