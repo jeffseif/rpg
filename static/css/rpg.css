@@ -55,3 +55,11 @@ div.html td {
 div.html th, div.html td {
   padding: 0.5em;
 }
+
+span.green {
+  color: green;
+}
+
+span.yellow {
+  color: yellow;
+}
