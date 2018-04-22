@@ -5,13 +5,13 @@
 | Astrogation (Int) |        |      | ◆◆
 | Athletics (Br)    |        |      | ◆
 | Charm (Pr)        |        |      | ◆◆◆
-| Coercion (Will)   |   ✅   |      | ◆◆◆
+| Coercion (Will)   |   ✅   |  2   | ⬢⬢◆
 | Computers (Int)   |        |      | ◆◆
 | Cool (Pr)         |   ✅   |  1   | ⬢◆◆
 | Coordination (Ag) |        |      | ◆◆◆
 | Deception (Cun)   |        |      | ◆◆◆↑
 | Discipline (Will) |   ✅   |  1   | ⬢◆◆
-| Knowledge (Int)   |   ✅   |      | ◆◆
+| Knowledge (Int)   |   ✅   |  1   | ⬢◆
 | Leadership (Pr)   |   ✅   |  2   | ⬢⬢◆
 | Mechanics (Int)   |        |      | ◆◆
 | Medicine (Int)    |        |      | ◆◆
