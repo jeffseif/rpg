@@ -47,8 +47,8 @@ host: $(VENV) $(HOST) $(HTML)
 			--port $(PORT) \
 			--reload
 
-$(HTML): $(VENV) $(shell find static/md/ -type f)
-	@$</bin/python build.py > $@
+$(HTML): $(VENV) $(HOST) $(shell find static/md/ -type f)
+	@$</bin/python $(HOST) > $@
 
 $(VENV): requirements.txt
 	@virtualenv \
