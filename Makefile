@@ -14,7 +14,16 @@ SHOWDOWN_DIR = $(SHOWDOWN)-$(SHOWDOWN_VERSION)/
 SHOWDOWN_JS = static/js/$(SHOWDOWN)/
 
 .PHONY: all
-all: $(SHOWDOWN_JS) host
+all: host
+
+.PHONY: host
+host: $(VENV) $(SHOWDOWN_JS) $(HOST) $(HTML)
+	@echo "Hosted @ http://$(shell hostname -I | xargs):$(PORT)/"
+	@FLASK_APP=$(HOST) $</bin/flask \
+		run \
+			--host '0.0.0.0' \
+			--port $(PORT) \
+			--reload
 
 $(SHOWDOWN_JS): $(SHOWDOWN_DIR)
 	@$(mkdir)
@@ -37,15 +46,6 @@ $(SHOWDOWN_TARBALL):
 		--silent \
 		--output $@ \
 		https://github.com/showdownjs/showdown/archive/$(SHOWDOWN_VERSION).tar.gz
-
-.PHONY: host
-host: $(VENV) $(HOST) $(HTML)
-	@echo "Hosted @ http://$(shell hostname -I | xargs):$(PORT)/"
-	@FLASK_APP=$(HOST) $</bin/flask \
-		run \
-			--host '0.0.0.0' \
-			--port $(PORT) \
-			--reload
 
 $(HTML): $(VENV) $(HOST) $(shell find static/md/ -type f)
 	@$</bin/python $(HOST) > $@
