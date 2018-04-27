@@ -3,27 +3,24 @@ VENV = venv/
 
 mkdir = mkdir -p $(dir $@/)
 
-HOST = host.py
 HTML = index.html
+HOST = 0.0.0.0
 PORT = 5000
 SHOWDOWN = showdown
 SHOWDOWN_VERSION = 1.8.6
+WSGI = wsgi.py
 
 SHOWDOWN_TARBALL = $(SHOWDOWN)-$(SHOWDOWN_VERSION).tar.gz
 SHOWDOWN_DIR = $(SHOWDOWN)-$(SHOWDOWN_VERSION)/
 SHOWDOWN_JS = static/js/$(SHOWDOWN)/
 
 .PHONY: all
-all: host
+all: wsgi
 
-.PHONY: host
-host: $(VENV) $(SHOWDOWN_JS) $(HOST) $(HTML)
+.PHONY: wsgi
+wsgi: $(VENV) $(SHOWDOWN_JS) $(WSGI) $(HTML)
 	@echo "Hosted @ http://$(shell hostname -I | xargs):$(PORT)/"
-	@FLASK_APP=$(HOST) $</bin/flask \
-		run \
-			--host '0.0.0.0' \
-			--port $(PORT) \
-			--reload
+	@FLASK_ENV=development FLASK_RUN_HOST=$(HOST) FLASK_RUN_PORT=$(PORT) $</bin/flask run
 
 $(SHOWDOWN_JS): $(SHOWDOWN_DIR)
 	@$(mkdir)
@@ -47,8 +44,8 @@ $(SHOWDOWN_TARBALL):
 		--output $@ \
 		https://github.com/showdownjs/showdown/archive/$(SHOWDOWN_VERSION).tar.gz
 
-$(HTML): $(VENV) $(HOST) $(shell find static/md/ -type f)
-	@$</bin/python $(HOST) > $@
+$(HTML): $(VENV) $(WSGI) $(shell find static/md/ -type f)
+	@$</bin/python $(WSGI) > $@
 
 $(VENV): requirements.txt
 	@virtualenv \
