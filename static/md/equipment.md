@@ -2,7 +2,7 @@
 
 | Credits |
 |:-------:|
-|   195   |
+|   295   |
 
 |         Weapon         |     Skill      |  Range  |                     Damage                      | Dice |
 |:---------------------- |:--------------:|:-------:|:-----------------------------------------------:|:----:|
@@ -19,7 +19,7 @@
 |       | Electrogoggles         | See objects far away and through darkness, smoke, and other obstructions.
 |       | Heavy Blaster Pistol
 |       | Combat Knife
-|   3   | Frag Grenade
-|   1   | Armor Piercing Grenade
+|   4   | Frag Grenade
+|   2   | Armor Piercing Grenade
 |   5   | Stimpack               | Use as a maneuver to heal 4 wounds on a living creature.
 |   2   | Glowrods               | Bright lights for signaling or illumination.
