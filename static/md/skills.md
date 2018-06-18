@@ -3,7 +3,7 @@
 |      Skills       | Career | Rank | Dice  |
 |:----------------- |:------:|:----:|:-----:|
 | Astrogation (Int) |        |      | ◆◆
-| Athletics (Br)    |        |      | ◆
+| Athletics (Br)    |        |  1   | ⬢
 | Charm (Pr)        |        |      | ◆◆◆
 | Coercion (Will)   |   ✅   |  2   | ⬢⬢◆
 | Computers (Int)   |        |      | ◆◆
@@ -30,5 +30,5 @@
 | Brawl (Br)          |   ✅   |      | ◆
 | Gunnery (Ag)        |        |      | ◆◆◆
 | Melee (Br)          |        |      | ◆
-| Ranged (Light) (Ag) |   ✅   |  1   | ⬢◆◆
+| Ranged (Light) (Ag) |   ✅   |  2   | ⬢⬢◆
 | Ranged (Heavy) (Ag) |   ✅   |  1   | ⬢◆◆
