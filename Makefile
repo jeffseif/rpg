@@ -49,7 +49,6 @@ $(HTML): $(VENV) $(WSGI) $(shell find static/md/ -type f)
 
 $(VENV): requirements.txt
 	@virtualenv \
-		--no-site-packages \
 		--python=$(PYTHON) \
 		$@
 	@$@/bin/pip install \
